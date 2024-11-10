@@ -21,6 +21,9 @@ set backspace =indent,eol,start
 set hidden
 set laststatus =2
 
+" Set display keystrokes
+set showcmd
+
 " Set linenumbers
 set number
 "set relativenumber
