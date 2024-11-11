@@ -217,4 +217,13 @@ catch /E254/
     " Do nothing, just suppress the message
 endtry
 
+" Enable cscope in Vim
+set cscopequickfix=s-,c-,d-,i-,t-,e-
+
+" Automatically add the database when entering Vim
+if filereadable("cscope.out")
+    cs add cscope.out
+endif
+
+
 call plug#end()
